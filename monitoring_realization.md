@@ -1,0 +1,7 @@
+# Monitoring realization 
+
+This exercise is quite difficult to answer properly and in depth as our `Prometheus - Grafana` setup has not been properly implemented yet. In general creating a dashboard that actually gives you meaningful insight I, Aleksander, have found quite difficult, in regards to what metrics could actually learn us something from the system. Also the simulation had not been working properly for some time after implementing our dashboards, so there was no real traffic on our server, other than us visiting our site.
+
+One realization I had quickly after implementing the dashboard though, was to ignore the `/metrics` endpoint in our system, as Prometheus pings this every 15 seconds. Initially I had not set up our code to follow this, and this bloated our graphs with traffic coming from Prometheus and not real users. I therefore realized that this probably was a quite big issue, and implemented this in our code, to make our monitoring setup more real. Another realization here, was that we don’t want anyone to be able to access our `/metrics` endpoint, as this could give them insights about our system, and if we are vulnerable in specific time slots each day/week. I therefore made it so that only our monitoring server’s IP address could access the `/metrics` endpoint. This was done in the `NGINX default.conf`. 
+
+So for now I have not had the grand realization from monitoring something from our VM, but this document will be updated as soon as we implement better metrics, and this realization hopefully comes :-). 
