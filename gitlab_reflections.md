@@ -35,7 +35,7 @@ The extra bureaucracy **added no real value** and **hurt developer experience**.
 | **Git proficiency** | Comfortable with Git **before** the course (3 prior semesters of group work), but previously relied on **IntelliJ GUI**. |
 | **CLI skills** | Now prefer working via **terminal**; the course pushed me to adopt CLI workflows. |
 | **Merge conflicts** | Few *real* conflicts (low concurrent work load). Practiced conflict resolution in **solo exercises** to upskill. |
-| **Vim discovery** | Using **Vim** inside merge tools was a *game‑changer*—although for heavy conflicts, a visual merge tool or fixing directly on GitHub can still be faster. |
+
 
 ---
 
